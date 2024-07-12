@@ -1,0 +1,30 @@
+@import '../components/variables';
+
+.about {
+  display: flex;
+  margin-top: var(--margin-1200);
+
+  &__content {
+    margin-top: calc(var(--margin-20) + 0.8rem);
+  }
+  &__title {
+    line-height: var(--linen-height-70);
+    font-size: var(--font-size-50);
+    font-weight: var(--font-weight-500);
+    .vbn-name {
+      font-weight: var(--font-weight-700);
+    }
+  }
+
+  &__description {
+    line-height: var(--linen-height-30);
+    margin-top: var(--margin-20);
+    color: var(--text-color);
+    .vbn-name {
+      font-weight: var(--font-weight-500);
+    }
+  }
+  &__button {
+    margin-top: var(--margin-50);
+  }
+}

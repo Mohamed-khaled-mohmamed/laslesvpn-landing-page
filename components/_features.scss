@@ -1,0 +1,34 @@
+@import '../components/variables';
+
+.features {
+  display: flex;
+  margin: var(--margin-100) 0;
+  column-gap: var(--gap-170);
+  // z-index: -999;
+  &__image-container {
+    width: 50.812rem;
+    height: 41.471rem;
+  }
+  &__image {
+    // max-width: 100%;
+  }
+
+  &__content {
+    margin-top: var(--margin-50);
+    color: var(--text-color);
+  }
+
+  &__list {
+  }
+
+  &__item {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: var(--margin-20);
+    .correct {
+      margin-right: 1rem;
+    }
+  }
+}

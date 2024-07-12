@@ -1,0 +1,19 @@
+@import '../components/variables';
+
+.subscribe {
+  width: 114rem;
+  height: 23.3rem;
+  padding: 0 7rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-white);
+  box-shadow: 1px 0px 20px 7px rgb(13 16 37 / 6%);
+  border-radius: var(--border-radius-10);
+  position: absolute;
+  top: -12rem;
+  // right: 15rem;
+  left: 50%;
+  transform: translateX(-50%);
+}

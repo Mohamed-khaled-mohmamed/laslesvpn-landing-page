@@ -1,0 +1,68 @@
+@import '../components/variables';
+
+
+.header {
+  padding-top: calc(var(--margin-50) / 2);
+  padding-bottom: calc(var(--margin-50) / 2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size-16);
+
+  &__logo-container {
+    width: 14.9rem;
+    height: 3.7rem;
+
+    &__img {
+      max-width: 100%;
+    }
+  }
+
+  &__links-container {
+    display: flex;
+  }
+
+  &__links {
+    display: flex;
+    column-gap: 4rem;
+  }
+
+  &__link {
+    display: block;
+    color: var(--text-color);
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+
+    &__sign-in {
+      // Add styles for sign-in if any
+      font-weight: var(--font-weight-500);
+    }
+
+    &__sign-up {
+      padding: var(--padding-13-45);
+      color: var(--main-color);
+      border: 1px solid var(--main-color);
+      border-radius: var(--border-radius-70);
+      font-weight: var(--font-weight-500);
+
+      &:hover {
+        background-color: var(--main-color);
+        color: #fff;
+        transition: var(--btn-transform);
+      }
+    }
+  }
+
+  &__menu {
+    display: none;
+  }
+
+  &__label-menu {
+    display: none;
+  }
+}

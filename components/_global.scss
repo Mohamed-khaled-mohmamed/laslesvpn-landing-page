@@ -1,0 +1,30 @@
+@import '../components/variables';
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: border-box;
+}
+*::after,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  &:hover{
+    color: var(--main-color);
+    text-decoration: underline;
+  }
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+ul,
+ol {
+  list-style: none;
+}
+

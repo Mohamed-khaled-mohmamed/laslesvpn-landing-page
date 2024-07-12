@@ -1,0 +1,12 @@
+@import '../components/variables';
+
+.global-network {
+  margin-top: calc(var(--margin-50) * 1);
+  text-align: center;
+  &__partners {
+    display: flex;
+    // justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+  }
+}

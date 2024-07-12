@@ -1,0 +1,100 @@
+@import '../components/variables';
+
+.price {
+  padding-top: calc(var(--margin-20) * 5);
+  padding-bottom: calc(var(--margin-50) * 2);
+  &__plans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: calc(var(--gap-36) + 0.4rem);
+  }
+  &__plan {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    width: 33rem;
+    height: 76rem;
+    background-color: var(--color-white);
+    border: 2px solid var(--color-with-gray-light);
+    border-radius: var(--border-radius-10);
+
+    &-image {
+      margin-top: calc(var(--margin-20) * 4);
+    }
+    &-title {
+      margin: calc(var(--margin-20) + 1rem) 0;
+      font-size: var(--font-size-18);
+      font-weight: var(--font-weight-500);
+      color: var(--title-color);
+    }
+
+
+
+    &--highlighted {
+      border: 2px solid var(--main-color);
+    }
+  }
+
+  &__features {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap-10);
+  }
+  &__features-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--gap-10);
+  }
+
+  &__feature {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-14);
+    color: var(--text-color);
+    column-gap: calc(var(--gap-10) * 2);
+
+    &-img {
+      width: 2.5rem;
+    }
+  }
+
+  &__ditels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(var(--gap-10) * 2);
+  }
+
+  &__cost {
+    font-size: var(--font-size-25);
+    font-weight: var(--font-weight-500);
+    color: var(--title-color);
+    &_year{
+      color: var(--text-color);
+      font-weight: normal;
+    }
+  }
+
+  &__select-btn {
+    margin-bottom: var(--margin-50);
+    // padding:var(--padding-13-63);
+    width: 17.8rem;
+    height: 4.5rem;
+    color: var(--main-color);
+    font-weight: var(--font-weight-700);
+    border: 2px solid var(--main-color);
+    border-radius: var(--border-radius-50);
+  }
+  .selcted {
+    // border :none;
+    color: var(--color-white);
+    background-color: var(--main-color);
+    box-shadow: var(--box-shadow-big);
+  }
+}
